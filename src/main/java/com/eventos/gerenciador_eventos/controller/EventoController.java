@@ -29,11 +29,6 @@ public class EventoController {
     }
 
 
-    @GetMapping
-    public ResponseEntity<List<Evento>> listarTodos() {
-        return ResponseEntity.ok(eventoService.listarTodos());
-    }
-
 
     @GetMapping("/admin/{adminId}")
     public ResponseEntity<List<Evento>> listarPorAdmin(@PathVariable Long adminId) {
